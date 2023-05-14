@@ -1,0 +1,161 @@
+* {
+    margin: 0px;
+    padding: 0px !important;
+    box-sizing: border-box !important;
+    position: relative;
+}
+
+.fs-24 {
+    font-size: 24px;
+}
+
+.fs-10 {
+    font-size: 10px;
+}
+
+.fs-12 {
+    font-size: 12px;
+}
+
+.fs-8 {
+    font-size: 8px;
+}
+
+.fw-500 {
+    font-weight: 500;
+}
+
+.r-15 {
+    border-radius: 15px;
+}
+
+/* ------------- */
+
+
+
+
+
+:root {
+    --bg-trips: #F2F2FF;
+    --bg-hotels: #FFDCFB;
+    --bg-flights: #FFF1E0;
+    --bg-offers: #E5F1F8;
+    --light-gray: #F9F9F9;
+    --text-gray: #9295A3;
+    --text-gray-black: #2B3D5F;
+    --text-orange: #FE9900;
+    --text-cyan: #07AEAF;
+}
+
+.home {
+    background-image: url(assets/Image-bg.png);
+    background-size: 100% 100%;
+    height: 262px;
+}
+
+.menu-bar {
+    height: 32px;
+    margin-top: 24px;
+}
+
+.heading {
+    margin-top: 30px;
+}
+
+.heading span {
+    margin-top: 16px;
+}
+
+/* ---------------------------------- */
+.radius-40 {
+    border-top-left-radius: 40px;
+    border-top-right-radius: 40px;
+    margin-top: -52px;
+    min-height: calc(100vh - 210px);
+    overflow: hidden;
+
+}
+
+.icon {
+    width: 48px;
+    height: 48px;
+    border-radius: 50% 50%;
+    flex-shrink: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+a:hover>p {
+    color: #07AEAF !important;
+}
+
+.bg-trips {
+    background-color: var(--bg-trips);
+}
+
+.bg-hotels {
+    background-color: var(--bg-hotels);
+}
+
+.bg-flights {
+    background-color: var(--bg-flights);
+}
+
+.bg-offers {
+    background-color: var(--bg-offers);
+}
+
+.text-gray {
+    color: var(--text-gray);
+}
+
+.light-gray {
+    background-color: var(--light-gray);
+}
+
+.text-orange {
+    color: var(--text-orange);
+}
+
+.text-cyan {
+    color: var(--text-cyan);
+}
+
+.popular-offer {
+    margin-top: 19px;
+}
+
+.cards {
+    width: 100vw;
+}
+
+.hotel-near-you {
+    margin-top: 32px;
+}
+
+.hotel-near-card {
+    width: 155px;
+    box-sizing: border-box;
+}
+
+.badge {
+    position: absolute;
+    z-index: 2;
+    right: 12px;
+    top: 12px;
+}
+
+.bottom-height {
+    height: 89px;
+}
+
+.bottom-bar {
+    height: 89px;
+    position: fixed;
+    z-index: 3;
+    bottom: 0px;
+    width: 100%;
+}
+
+/* ---------------------------------- */

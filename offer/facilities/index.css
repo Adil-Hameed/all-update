@@ -1,0 +1,117 @@
+* {
+    margin: 0px;
+    padding: 0px !important;
+    box-sizing: border-box !important;
+    position: relative;
+}
+
+.fw-500 {
+    font-weight: 500;
+}
+
+.fs-18 {
+    font-size: 18px;
+}
+
+.fs-14 {
+    font-size: 14px;
+}
+
+.fs-12 {
+    font-size: 12px;
+}
+
+.r-15 {
+    border-radius: 15px;
+}
+
+.r-10 {
+    border-radius: 10px;
+}
+
+/* ------------------------------ */
+
+
+
+
+
+
+:root {
+    --main-primary: #07AEAF;
+    --main-primary-text: #07AEAF;
+    --text-purple: #4267B2;
+    --text-gray: #9295A3;
+    --light-gray: #F9F9F9;
+    --gray-black: #2B3D5F;
+    /* -------------------------------- */
+}
+
+.main-primary {
+    background-color: var(--main-primary);
+}
+
+.main-primary-text {
+    color: var(--main-primary-text);
+}
+
+.gray-black {
+    color: var(--gray-black);
+}
+
+a:hover p {
+    color: #07AEAF !important;
+}
+
+.header {
+    height: 60px;
+    font-weight: 500;
+}
+
+
+/* ------------------------------------- */
+.slider {
+    max-width: 327px;
+}
+
+.badge {
+    position: absolute;
+    z-index: 2;
+    right: 16px;
+    top: 16px;
+}
+
+.text-purple {
+    color: var(--text-purple);
+}
+
+.text-gray {
+    color: var(--text-gray);
+}
+
+.book-now-bar {
+    height: 60px;
+    margin-top: 52px;
+    margin-bottom: 30px;
+}
+
+.book-now-bar p {
+    margin-left: 20px;
+}
+
+.book-now {
+    width: 130px;
+    height: 48px;
+    margin-right: 6px;
+}
+
+.light-gray {
+    background-color: var(--light-gray);
+}
+
+/* ---------------------------------- */
+.radius-40 {
+    min-height: calc(100vh - 60px);
+}
+
+
+/* ---------------------------------- */

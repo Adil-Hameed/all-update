@@ -1,0 +1,105 @@
+* {
+    margin: 0px;
+    padding: 0px !important;
+    box-sizing: border-box !important;
+    position: relative;
+}
+
+.fs-24 {
+    font-size: 24px;
+}
+
+.fs-10 {
+    font-size: 10px;
+}
+
+.fs-12 {
+    font-size: 12px;
+}
+
+.fs-8 {
+    font-size: 8px;
+}
+
+.fw-500 {
+    font-weight: 500;
+}
+
+.r-15 {
+    border-radius: 15px;
+}
+
+/* ------------- */
+
+
+
+
+
+:root {
+    --main-primary: #07AEAF;
+    --main-primary-text: #07AEAF;
+    --light-gray: #F9F9F9;
+    --text-gray: #9295A3;
+    --text-gray-black: #2B3D5F;
+    --text-cyan: #07AEAF;
+}
+
+
+/* ---------------------------------- */
+a:hover>p {
+    color: #07AEAF !important;
+}
+
+.main-primary {
+    background-color: var(--main-primary);
+}
+
+.main-primary-text {
+    color: var(--main-primary-text);
+}
+
+.header {
+    height: 60px;
+    font-weight: 500;
+}
+
+.radius-40 {
+
+    min-height: calc(100vh - 60px);
+
+}
+
+
+.text-gray {
+    color: var(--text-gray);
+}
+
+.light-gray {
+    background-color: var(--light-gray);
+}
+
+
+.text-cyan {
+    color: var(--text-cyan);
+}
+
+.badge {
+    position: absolute;
+    z-index: 2;
+    right: 12px;
+    top: 12px;
+}
+
+.bottom-height {
+    height: 89px;
+}
+
+.bottom-bar {
+    height: 89px;
+    position: fixed;
+    z-index: 3;
+    bottom: 0px;
+    width: 100%;
+}
+
+/* ---------------------------------- */

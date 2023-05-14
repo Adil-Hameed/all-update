@@ -1,0 +1,468 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Go Tour</title>
+    <link rel="stylesheet" href="index.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+</head>
+
+<body>
+    <div class="px-4 mx-auto main-primary">
+        <div class="d-flex   align-items-center header">
+            <a href="../index.html" class="text-decoration-none gray-black ">
+                <svg class="" width="17" height="15" viewBox="0 0 17 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="M17 7.27411C17 7.65381 16.7178 7.9676 16.3518 8.01726L16.25 8.02411L3.066 8.02351L7.82899 12.767C8.12251 13.0593 8.12353 13.5342 7.83127 13.8277C7.56558 14.0945 7.14897 14.1196 6.85489 13.9024L6.77061 13.83L0.720613 7.80598C0.681923 7.76746 0.648317 7.72576 0.619795 7.68173C0.611738 7.66848 0.603539 7.65492 0.595764 7.64109C0.588614 7.62923 0.582151 7.61692 0.576056 7.60448C0.567589 7.58637 0.559317 7.56766 0.551805 7.54857C0.545702 7.53385 0.540607 7.51953 0.535959 7.5051C0.530434 7.48721 0.525064 7.46814 0.520447 7.44878C0.517014 7.43526 0.514294 7.42226 0.511923 7.4092C0.508587 7.38976 0.505749 7.36966 0.503723 7.34931C0.501974 7.33379 0.500921 7.31842 0.50034 7.30303C0.500189 7.29369 0.5 7.28392 0.5 7.27411L0.500376 7.24506C0.50095 7.23034 0.501955 7.21563 0.503393 7.20096L0.5 7.27411C0.5 7.22678 0.504383 7.18048 0.512768 7.13558C0.514711 7.12486 0.517029 7.11385 0.519594 7.10289C0.524921 7.08031 0.531078 7.05857 0.538168 7.03725C0.541647 7.02666 0.545702 7.01535 0.550034 7.00412C0.558798 6.98155 0.568325 6.96004 0.578804 6.93908C0.583673 6.92923 0.589125 6.91891 0.594835 6.9087C0.604208 6.89204 0.613863 6.87621 0.624073 6.86078C0.631277 6.84986 0.639254 6.8385 0.647583 6.82731L0.654074 6.81866C0.67428 6.79227 0.696201 6.76725 0.719669 6.74378L0.72057 6.74308L6.77057 0.718085C7.06407 0.425799 7.53894 0.426782 7.83123 0.720281C8.09694 0.987098 8.12029 1.40381 7.90182 1.69697L7.82903 1.78094L3.068 6.52351L16.25 6.52411C16.6642 6.52411 17 6.8599 17 7.27411Z"
+                        fill="white" />
+                </svg>
+            </a>
+            <p class="text-white text-center mb-0 fw-500 flex-grow-1">
+                Search Results
+            </p>
+        </div>
+    </div>
+
+    <div class=" px-4 mx-auto main-primary radius-40 pt-1 pb-1">
+        <div class="mx-auto bg-white card mb-3  position-relative">
+            <div class="position-absolute elipse-parent-left  h-100  ">
+                <div class="elipse">
+
+                </div>
+            </div>
+            <div class="position-absolute elipse-parent-right h-100  ">
+                <div class="elipse">
+
+                </div>
+            </div>
+            <div class="mt-4 line-1   px-4  d-flex justify-content-between">
+                <div>
+                    <p class="fs-18 main-primary-text fw-500 mb-0">
+                        Dhaka
+                    </p>
+                    <p class="fs-14 main-primary-text mb-0">
+                        (DHK)
+                    </p>
+                </div>
+                <img src="assets/Logo 1.svg" width="84" height="34" alt="" srcset="">
+
+                <div>
+                    <p class="fs-18 main-primary-text fw-500 mb-0">
+                        Londn
+                    </p>
+                    <p class="fs-14 main-primary-text mb-0">
+                        (LCY)
+                    </p>
+                </div>
+            </div>
+            <div class="line-2 px-4 d-flex justify-content-between">
+                <div>
+                    <p class="fs-12 text-gray mb-0">
+                        Depart
+                    </p>
+                    <p class="fs-14 mb-0  fw-500 text-gray-black">
+                        8:30 AM
+                    </p>
+                </div>
+                <div>
+                    <p class="fs-12 pt-3 text-gray mb-0 ">
+                        06 h 21 m
+                    </p>
+                </div>
+
+                <div class="text-end">
+                    <p class="fs-12 text-gray mb-0 ">
+                        Seat Left
+                    </p>
+                    <p class="fs-14 mb-0 fw-500  text-gray-black">
+                        26
+                    </p>
+                </div>
+            </div>
+            <div class="d-flex line-3 px-4 ">
+                <svg class="mx-auto" width="279" height="20" viewBox="0 0 279 20" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <line x1="11" y1="9.75" x2="272" y2="9.75" stroke="#C6CFD6" stroke-width="0.5"
+                        stroke-dasharray="4 4" />
+                    <circle cx="7" cy="10" r="7" fill="#E5E9EC" />
+                    <circle cx="7" cy="10" r="4" fill="#8C9EA8" />
+                    <circle cx="272" cy="10" r="7" fill="#E5E9EC" />
+                    <circle cx="272" cy="10" r="3.75" fill="white" stroke="#8C9EA8" stroke-width="0.5" />
+                    <g clip-path="url(#clip0_571_790)">
+                        <path
+                            d="M150 10C150 9.2 149.3 8.5 148.5 8.5H143L138 0.5H136L138.5 8.5H133L131.5 6.5H130L131 10L130 13.5H131.5L133 11.5H138.5L136 19.5H138L143 11.5H148.5C149.3 11.5 150 10.8 150 10Z"
+                            fill="#C6CFD6" />
+                    </g>
+                    <defs>
+                        <clipPath id="clip0_571_790">
+                            <rect width="20" height="20" fill="white" transform="translate(130)" />
+                        </clipPath>
+                    </defs>
+                </svg>
+            </div>
+
+            <div class="d-flex justify-content-between line-4 px-4 ">
+                <div class="d-flex align-items-center">
+                    <p class="fs-18 text-green fw-semibold mb-0">
+                        $100
+                    </p>
+                    <span class="text-gray fs-10 ms-1">
+                        Ticket price
+                    </span>
+                </div>
+
+                <div class="d-flex align-items-center">
+                    <svg width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <g clip-path="url(#clip0_571_809)">
+                            <path
+                                d="M5.00016 0.833008C7.30433 0.833008 9.16683 2.70009 9.16683 4.99967C9.16683 7.30009 7.30433 9.16634 5.00016 9.16634C2.70016 9.16634 0.833496 7.30009 0.833496 4.99967C0.833496 2.70009 2.70016 0.833008 5.00016 0.833008ZM5.00016 6.22092C4.80016 6.22092 4.63766 6.38342 4.63766 6.58342C4.63766 6.78342 4.80016 6.95009 5.00433 6.95009C5.20433 6.95009 5.36683 6.78342 5.36683 6.58342C5.36683 6.38342 5.20433 6.22092 5.00016 6.22092ZM5.00016 3.05384C4.80016 3.05384 4.6335 3.22092 4.6335 3.42051V5.26217C4.6335 5.46259 4.80016 5.62467 5.00016 5.62467C5.20016 5.62467 5.36266 5.46259 5.36266 5.26217V3.42051C5.36266 3.22092 5.20016 3.05384 5.00016 3.05384Z"
+                                fill="#07AEAF" />
+                        </g>
+                        <defs>
+                            <clipPath id="clip0_571_809">
+                                <rect width="10" height="10" fill="white" />
+                            </clipPath>
+                        </defs>
+                    </svg>
+                    <span class="text-gray fs-12 ms-1">
+                        Flight Info
+                    </span>
+                </div>
+            </div>
+        </div>
+
+        <div class="mx-auto bg-white card mb-3  position-relative">
+            <div class="position-absolute elipse-parent-left  h-100  ">
+                <div class="elipse">
+
+                </div>
+            </div>
+            <div class="position-absolute elipse-parent-right h-100  ">
+                <div class="elipse">
+
+                </div>
+            </div>
+            <div class="mt-4 line-1   px-4  d-flex justify-content-between">
+                <div>
+                    <p class="fs-18 main-primary-text fw-500 mb-0">
+                        Comilla
+                    </p>
+                    <p class="fs-14 main-primary-text mb-0">
+                        (COM)
+                    </p>
+                </div>
+                <img src="assets/Logo 1.svg" width="84" height="34" alt="" srcset="">
+
+                <div>
+                    <p class="fs-18 main-primary-text fw-500 mb-0">
+                        Sylhet
+                    </p>
+                    <p class="fs-14 main-primary-text mb-0">
+                        (SYL)
+                    </p>
+                </div>
+            </div>
+            <div class="line-2 px-4 d-flex justify-content-between">
+                <div>
+                    <p class="fs-12 text-gray mb-0">
+                        Depart
+                    </p>
+                    <p class="fs-14 mb-0  fw-500 text-gray-black">
+                        8:30 AM
+                    </p>
+                </div>
+                <div>
+                    <p class="fs-12 pt-3 text-gray mb-0 ">
+                        06 h 21 m
+                    </p>
+                </div>
+
+                <div class="text-end">
+                    <p class="fs-12 text-gray mb-0 ">
+                        Seat Left
+                    </p>
+                    <p class="fs-14 mb-0 fw-500  text-gray-black">
+                        26
+                    </p>
+                </div>
+            </div>
+            <div class="d-flex line-3 px-4 ">
+                <svg class="mx-auto" width="279" height="20" viewBox="0 0 279 20" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <line x1="11" y1="9.75" x2="272" y2="9.75" stroke="#C6CFD6" stroke-width="0.5"
+                        stroke-dasharray="4 4" />
+                    <circle cx="7" cy="10" r="7" fill="#E5E9EC" />
+                    <circle cx="7" cy="10" r="4" fill="#8C9EA8" />
+                    <circle cx="272" cy="10" r="7" fill="#E5E9EC" />
+                    <circle cx="272" cy="10" r="3.75" fill="white" stroke="#8C9EA8" stroke-width="0.5" />
+                    <g clip-path="url(#clip0_571_790)">
+                        <path
+                            d="M150 10C150 9.2 149.3 8.5 148.5 8.5H143L138 0.5H136L138.5 8.5H133L131.5 6.5H130L131 10L130 13.5H131.5L133 11.5H138.5L136 19.5H138L143 11.5H148.5C149.3 11.5 150 10.8 150 10Z"
+                            fill="#C6CFD6" />
+                    </g>
+                    <defs>
+                        <clipPath id="clip0_571_790">
+                            <rect width="20" height="20" fill="white" transform="translate(130)" />
+                        </clipPath>
+                    </defs>
+                </svg>
+            </div>
+
+            <div class="d-flex justify-content-between line-4 px-4 ">
+                <div class="d-flex align-items-center">
+                    <p class="fs-18 text-green fw-semibold mb-0">
+                        $100
+                    </p>
+                    <span class="text-gray fs-10 ms-1">
+                        Ticket price
+                    </span>
+                </div>
+
+                <div class="d-flex align-items-center">
+                    <svg width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <g clip-path="url(#clip0_571_809)">
+                            <path
+                                d="M5.00016 0.833008C7.30433 0.833008 9.16683 2.70009 9.16683 4.99967C9.16683 7.30009 7.30433 9.16634 5.00016 9.16634C2.70016 9.16634 0.833496 7.30009 0.833496 4.99967C0.833496 2.70009 2.70016 0.833008 5.00016 0.833008ZM5.00016 6.22092C4.80016 6.22092 4.63766 6.38342 4.63766 6.58342C4.63766 6.78342 4.80016 6.95009 5.00433 6.95009C5.20433 6.95009 5.36683 6.78342 5.36683 6.58342C5.36683 6.38342 5.20433 6.22092 5.00016 6.22092ZM5.00016 3.05384C4.80016 3.05384 4.6335 3.22092 4.6335 3.42051V5.26217C4.6335 5.46259 4.80016 5.62467 5.00016 5.62467C5.20016 5.62467 5.36266 5.46259 5.36266 5.26217V3.42051C5.36266 3.22092 5.20016 3.05384 5.00016 3.05384Z"
+                                fill="#07AEAF" />
+                        </g>
+                        <defs>
+                            <clipPath id="clip0_571_809">
+                                <rect width="10" height="10" fill="white" />
+                            </clipPath>
+                        </defs>
+                    </svg>
+                    <span class="text-gray fs-12 ms-1">
+                        Flight Info
+                    </span>
+                </div>
+            </div>
+        </div>
+
+        <div class="mx-auto bg-white card mb-3  position-relative">
+            <div class="position-absolute elipse-parent-left  h-100  ">
+                <div class="elipse">
+
+                </div>
+            </div>
+            <div class="position-absolute elipse-parent-right h-100  ">
+                <div class="elipse">
+
+                </div>
+            </div>
+            <div class="mt-4 line-1   px-4  d-flex justify-content-between">
+                <div>
+                    <p class="fs-18 main-primary-text fw-500 mb-0">
+                        Dhaka
+                    </p>
+                    <p class="fs-14 main-primary-text mb-0">
+                        (DHK)
+                    </p>
+                </div>
+                <img src="assets/Logo 1.svg" width="84" height="34" alt="" srcset="">
+
+                <div>
+                    <p class="fs-18 main-primary-text fw-500 mb-0">
+                        Londn
+                    </p>
+                    <p class="fs-14 main-primary-text mb-0">
+                        (LCY)
+                    </p>
+                </div>
+            </div>
+            <div class="line-2 px-4 d-flex justify-content-between">
+                <div>
+                    <p class="fs-12 text-gray mb-0">
+                        Depart
+                    </p>
+                    <p class="fs-14 mb-0  fw-500 text-gray-black">
+                        8:30 AM
+                    </p>
+                </div>
+                <div>
+                    <p class="fs-12 pt-3 text-gray mb-0 ">
+                        06 h 21 m
+                    </p>
+                </div>
+
+                <div class="text-end">
+                    <p class="fs-12 text-gray mb-0 ">
+                        Seat Left
+                    </p>
+                    <p class="fs-14 mb-0 fw-500  text-gray-black">
+                        26
+                    </p>
+                </div>
+            </div>
+            <div class="d-flex line-3 px-4 ">
+                <svg class="mx-auto" width="279" height="20" viewBox="0 0 279 20" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <line x1="11" y1="9.75" x2="272" y2="9.75" stroke="#C6CFD6" stroke-width="0.5"
+                        stroke-dasharray="4 4" />
+                    <circle cx="7" cy="10" r="7" fill="#E5E9EC" />
+                    <circle cx="7" cy="10" r="4" fill="#8C9EA8" />
+                    <circle cx="272" cy="10" r="7" fill="#E5E9EC" />
+                    <circle cx="272" cy="10" r="3.75" fill="white" stroke="#8C9EA8" stroke-width="0.5" />
+                    <g clip-path="url(#clip0_571_790)">
+                        <path
+                            d="M150 10C150 9.2 149.3 8.5 148.5 8.5H143L138 0.5H136L138.5 8.5H133L131.5 6.5H130L131 10L130 13.5H131.5L133 11.5H138.5L136 19.5H138L143 11.5H148.5C149.3 11.5 150 10.8 150 10Z"
+                            fill="#C6CFD6" />
+                    </g>
+                    <defs>
+                        <clipPath id="clip0_571_790">
+                            <rect width="20" height="20" fill="white" transform="translate(130)" />
+                        </clipPath>
+                    </defs>
+                </svg>
+            </div>
+
+            <div class="d-flex justify-content-between line-4 px-4 ">
+                <div class="d-flex align-items-center">
+                    <p class="fs-18 text-green fw-semibold mb-0">
+                        $100
+                    </p>
+                    <span class="text-gray fs-10 ms-1">
+                        Ticket price
+                    </span>
+                </div>
+
+                <div class="d-flex align-items-center">
+                    <svg width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <g clip-path="url(#clip0_571_809)">
+                            <path
+                                d="M5.00016 0.833008C7.30433 0.833008 9.16683 2.70009 9.16683 4.99967C9.16683 7.30009 7.30433 9.16634 5.00016 9.16634C2.70016 9.16634 0.833496 7.30009 0.833496 4.99967C0.833496 2.70009 2.70016 0.833008 5.00016 0.833008ZM5.00016 6.22092C4.80016 6.22092 4.63766 6.38342 4.63766 6.58342C4.63766 6.78342 4.80016 6.95009 5.00433 6.95009C5.20433 6.95009 5.36683 6.78342 5.36683 6.58342C5.36683 6.38342 5.20433 6.22092 5.00016 6.22092ZM5.00016 3.05384C4.80016 3.05384 4.6335 3.22092 4.6335 3.42051V5.26217C4.6335 5.46259 4.80016 5.62467 5.00016 5.62467C5.20016 5.62467 5.36266 5.46259 5.36266 5.26217V3.42051C5.36266 3.22092 5.20016 3.05384 5.00016 3.05384Z"
+                                fill="#07AEAF" />
+                        </g>
+                        <defs>
+                            <clipPath id="clip0_571_809">
+                                <rect width="10" height="10" fill="white" />
+                            </clipPath>
+                        </defs>
+                    </svg>
+                    <span class="text-gray fs-12 ms-1">
+                        Flight Info
+                    </span>
+                </div>
+            </div>
+        </div>
+
+        <div class="mx-auto bg-white card mb-3  position-relative">
+            <div class="position-absolute elipse-parent-left  h-100  ">
+                <div class="elipse">
+
+                </div>
+            </div>
+            <div class="position-absolute elipse-parent-right h-100  ">
+                <div class="elipse">
+
+                </div>
+            </div>
+            <div class="mt-4 line-1   px-4  d-flex justify-content-between">
+                <div>
+                    <p class="fs-18 main-primary-text fw-500 mb-0">
+                        Comilla
+                    </p>
+                    <p class="fs-14 main-primary-text mb-0">
+                        (COM)
+                    </p>
+                </div>
+                <img src="assets/Logo 1.svg" width="84" height="34" alt="" srcset="">
+
+                <div>
+                    <p class="fs-18 main-primary-text fw-500 mb-0">
+                        Sylhet
+                    </p>
+                    <p class="fs-14 main-primary-text mb-0">
+                        (SYL)
+                    </p>
+                </div>
+            </div>
+            <div class="line-2 px-4 d-flex justify-content-between">
+                <div>
+                    <p class="fs-12 text-gray mb-0">
+                        Depart
+                    </p>
+                    <p class="fs-14 mb-0  fw-500 text-gray-black">
+                        8:30 AM
+                    </p>
+                </div>
+                <div>
+                    <p class="fs-12 pt-3 text-gray mb-0 ">
+                        06 h 21 m
+                    </p>
+                </div>
+
+                <div class="text-end">
+                    <p class="fs-12 text-gray mb-0 ">
+                        Seat Left
+                    </p>
+                    <p class="fs-14 mb-0 fw-500  text-gray-black">
+                        26
+                    </p>
+                </div>
+            </div>
+            <div class="d-flex line-3 px-4 ">
+                <svg class="mx-auto" width="279" height="20" viewBox="0 0 279 20" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <line x1="11" y1="9.75" x2="272" y2="9.75" stroke="#C6CFD6" stroke-width="0.5"
+                        stroke-dasharray="4 4" />
+                    <circle cx="7" cy="10" r="7" fill="#E5E9EC" />
+                    <circle cx="7" cy="10" r="4" fill="#8C9EA8" />
+                    <circle cx="272" cy="10" r="7" fill="#E5E9EC" />
+                    <circle cx="272" cy="10" r="3.75" fill="white" stroke="#8C9EA8" stroke-width="0.5" />
+                    <g clip-path="url(#clip0_571_790)">
+                        <path
+                            d="M150 10C150 9.2 149.3 8.5 148.5 8.5H143L138 0.5H136L138.5 8.5H133L131.5 6.5H130L131 10L130 13.5H131.5L133 11.5H138.5L136 19.5H138L143 11.5H148.5C149.3 11.5 150 10.8 150 10Z"
+                            fill="#C6CFD6" />
+                    </g>
+                    <defs>
+                        <clipPath id="clip0_571_790">
+                            <rect width="20" height="20" fill="white" transform="translate(130)" />
+                        </clipPath>
+                    </defs>
+                </svg>
+            </div>
+
+            <div class="d-flex justify-content-between line-4 px-4 ">
+                <div class="d-flex align-items-center">
+                    <p class="fs-18 text-green fw-semibold mb-0">
+                        $100
+                    </p>
+                    <span class="text-gray fs-10 ms-1">
+                        Ticket price
+                    </span>
+                </div>
+
+                <div class="d-flex align-items-center">
+                    <svg width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <g clip-path="url(#clip0_571_809)">
+                            <path
+                                d="M5.00016 0.833008C7.30433 0.833008 9.16683 2.70009 9.16683 4.99967C9.16683 7.30009 7.30433 9.16634 5.00016 9.16634C2.70016 9.16634 0.833496 7.30009 0.833496 4.99967C0.833496 2.70009 2.70016 0.833008 5.00016 0.833008ZM5.00016 6.22092C4.80016 6.22092 4.63766 6.38342 4.63766 6.58342C4.63766 6.78342 4.80016 6.95009 5.00433 6.95009C5.20433 6.95009 5.36683 6.78342 5.36683 6.58342C5.36683 6.38342 5.20433 6.22092 5.00016 6.22092ZM5.00016 3.05384C4.80016 3.05384 4.6335 3.22092 4.6335 3.42051V5.26217C4.6335 5.46259 4.80016 5.62467 5.00016 5.62467C5.20016 5.62467 5.36266 5.46259 5.36266 5.26217V3.42051C5.36266 3.22092 5.20016 3.05384 5.00016 3.05384Z"
+                                fill="#07AEAF" />
+                        </g>
+                        <defs>
+                            <clipPath id="clip0_571_809">
+                                <rect width="10" height="10" fill="white" />
+                            </clipPath>
+                        </defs>
+                    </svg>
+                    <span class="text-gray fs-12 ms-1">
+                        Flight Info
+                    </span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+        integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js"
+        integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
